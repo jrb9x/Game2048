@@ -46,8 +46,8 @@
     function confirmCallbackNuevo(buttonIndex) {
 		if(buttonIndex==1){
 			juegoNuevo();
-			startWatch();
-		}
+		}else
+		    startWatch();
     }
     function dialogConfirmNuevo() {
         stopWatch();
@@ -57,25 +57,26 @@
     }
 	/******************************************/
 
-    /*********PARTIDA GANADA NUEVO JUEGO*************/
+    /*********NUEVA PARTIDA*************/
 
     function confirmCallbackNuevaPartida(buttonIndex) {
         if(buttonIndex==1){
             juegoNuevo();
-            startWatch();
         }
         else
             navigator.app.exitApp();
     }
+
+    /*********PARTIDA GANADA*************/
+
     function dialogConfirmPartidaGanada() {
         stopWatch();
         var message = "Empezar un nuevo juego?";
         var title = "Ha ganado la Partida!";
         navigator.notification.confirm(message, confirmCallbackNuevaPartida, title, ['Aceptar','Cancelar']);
     }
-    /******************************************/
 
-    /*********PARTIDA PERDIDA NUEVO JUEGO*************/
+    /*********PARTIDA PERDIDA *************/
 
     function dialogConfirmPartidaPerdida() {
         stopWatch();
@@ -90,8 +91,8 @@
     function confirmCallbackSalir(buttonIndex) {
 		if(buttonIndex==1){
 			navigator.app.exitApp();
-		}
-		startWatch();
+		}else
+		    startWatch();
     }
     function dialogConfirmSalir() {
         stopWatch();
