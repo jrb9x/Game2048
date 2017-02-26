@@ -15,7 +15,8 @@
 	<preference name="SplashScreenDelay" value="10000"/>
 	<preference name="SplashMaintainAspectRatio" value="true|false" />
 	<preference name="SplashShowOnlyFirstTime" value="true|false" />
-
+    <preference name="orientation" value="portrait" />
+    
     <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
     <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />

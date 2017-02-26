@@ -562,11 +562,11 @@
             alert("Derecha " + acceleration.x);
             moverDerecha()
         }
-        else if(acceleration.y >= 9) {
+        else if(acceleration.y >= 7) {
             alert("Abajo " + acceleration.y);
             moverAbajo();
         }
-        else if(acceleration.y <= 3) {
+        else if(acceleration.y <= -2) {
             alert("Arriba " + acceleration.y);
             moverArriba();
         }
