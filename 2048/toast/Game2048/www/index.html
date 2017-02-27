@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Game 2048</title>
+</head>
+
+<body>
+	<div data-role="page" id="page">
+		<div data-role="main"  id="main">
+			<div id="contenedor">
+				<div id="cajaCabecera">
+					<table>
+						<tr>
+							<td id="columnaIzquierda">
+								<div id="logo">
+									2048
+								</div>
+							</td>
+							<td id="columnaDerecha">
+								<table id="tablaInfo">
+									<tr>
+										<td id="puntuacion" rowspan="2">
+											<div id="cajaScore">
+												<div id="cajaInferiorScore">
+													SCORE<br/>
+													<label id="score">27224</label>
+												</div>
+												<div id="cajaMediaScore">
+												</div>
+												<div id="cajaSuperiorScore">
+													<label id="aumento">+4</label>
+												</div>
+											</div>
+										</td>
+										<td id="newgame">
+											<button class="custom-btn2" id="nuevo">Nuevo</button>
+										</td>
+									</tr>
+									<tr>
+										<td id="exitgame">
+											<button class="custom-btn2" id="salir">Salir</button>
+										</td>
+									</tr>
+
+								</table>
+
+							</td>
+						</tr>
+					</table>
+				</div>
+				<p>Une los números y llega a la <b>ficha 2048!</b></p>
+				<div id="cajaCuerpo">
+					<table id="tableJuego">
+						<tr>
+							<td><div id="casilla00" class="casilla">4</div></td>
+							<td><div id="casilla01" class="casilla">2</div></td>
+							<td><div id="casilla02" class="casilla">2</div></td>
+							<td><div id="casilla03" class="casilla">4</div></td>
+						</tr>
+						<tr>
+							<td><div id="casilla10" class="casilla"></div></td>
+							<td><div id="casilla11" class="casilla"></div></td>
+							<td><div id="casilla12" class="casilla"></div></td>
+							<td><div id="casilla13" class="casilla"></div></td>
+						</tr>
+						<tr>
+							<td><div id="casilla20" class="casilla"></div></td>
+							<td><div id="casilla21" class="casilla"></div></td>
+							<td><div id="casilla22" class="casilla"></div></td>
+							<td><div id="casilla23" class="casilla"></div></td>
+						</tr>
+						<tr>
+							<td><div id="casilla30" class="casilla"></div></td>
+							<td><div id="casilla31" class="casilla"></div></td>
+							<td><div id="casilla32" class="casilla"></div></td>
+							<td><div id="casilla33" class="casilla"></div></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<script type="text/javascript" src="cordova.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/Toast.js"></script>
+</body>
+
+</html>
